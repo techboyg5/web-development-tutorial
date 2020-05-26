@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(yellow, orange);
+    background-attachment: fixed;
+    background-color: yellow;
+    animation: show 0.25s;
+}
+@keyframes show {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+a {
+    transition: background-color 0.25s;
+}
+a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+a:active {
+    background-color: rgba(255, 255, 255, 1);
+}
+.footer {
+    font-size: smaller;
+    text-align: center;
+    text-transform: lowercase;
+}

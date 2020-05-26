@@ -10,7 +10,7 @@ body {
     to {opacity: 1;}
 }
 a {
-    transition: background-color 0.25s;
+    transition: all 0.25s;
 }
 a:hover {
     background-color: rgba(255, 255, 255, 0.5);

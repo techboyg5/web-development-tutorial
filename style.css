@@ -25,6 +25,7 @@ a:active {
 }
 #disqus_thread {
     background-color: black;
+    font-family: monospace;
 }
 #disqus_thread a {
     color: green;

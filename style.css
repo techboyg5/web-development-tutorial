@@ -23,3 +23,15 @@ a:active {
     text-align: center;
     text-transform: lowercase;
 }
+.collapse {
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s;
+    overflow: auto;
+}
+.collapse:target {
+    height: 300px;
+    pointer-events: auto;
+    opacity: 1;
+}

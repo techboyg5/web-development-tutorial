@@ -26,3 +26,6 @@ a:active {
 #disqus_thread {
     background-color: black;
 }
+#disqus_thread a {
+    color: red;
+}

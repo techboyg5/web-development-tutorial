@@ -5,6 +5,18 @@
     <title>2.2 - DOCTYPE</title>
     <link rel="stylesheet" href="../style.css">
     <style>
+      #others {
+        height: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.5s;
+        overflow: hidden;
+      }
+      #others:target {
+        height: 300px;
+        pointer-events: auto;
+        opacity: 1;
+      }
       iframe {
         width: 100%;
       }
@@ -15,7 +27,7 @@
     <p>You need <code>&lt;!DOCTYPE html&gt;</code> to be the first thing in every HTML document. This is called the document type declaration, or the DOCTYPE.</p>
     <h2>Why?</h2>
     <p>This triggers standards mode in web browsers. Without the DOCTYPE, web browsers will display the page in quirks mode.</p>
-    <div id="others" class="collapse">
+    <div id="others">
       <h2>Other DOCTYPEs</h2>
       <p><a href="https://www.w3.org/QA/2002/04/valid-dtd-list.html">This page</a>, which is displayed in a frame below, has a whole lot of different DOCTYPEs. Don't use any of these DOCTYPEs except &lt;!DOCTYPE html&gt;.</p>
       <iframe src="https://www.w3.org/QA/2002/04/valid-dtd-list.html"></iframe>

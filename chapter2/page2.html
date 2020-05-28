@@ -8,11 +8,16 @@
       #others {
         height: 0;
         opacity: 0;
-        transition: all 1s;
+        pointer-events: none;
+        transition: all 0.5s;
       }
       #others:target {
         height: auto;
+        pointer-events: auto;
         opacity: 1;
+      }
+      iframe {
+        width: 100%;
       }
     </style>
   </head>

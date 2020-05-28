@@ -23,3 +23,6 @@ a:active {
     text-align: center;
     text-transform: lowercase;
 }
+#disqus_thread {
+    background-color: black;
+}

@@ -3,18 +3,7 @@ body {
     background-image: linear-gradient(yellow, orange);
     background-attachment: fixed;
     background-color: yellow;
-    background-color: black;
     animation: show 0.25s;
-}
-@media (prefers-color-scheme: dark) {
-    body {
-        background-image: none;
-        background-color: black;
-        color: white;
-    }
-    a {
-        color: silver;
-    }
 }
 @keyframes show {
     from {opacity: 0;}
@@ -33,4 +22,10 @@ a:active {
     font-size: smaller;
     text-align: center;
     text-transform: lowercase;
+}
+#disqus_thread {
+    background-color: black;
+}
+#disqus_thread a {
+    color: green;
 }

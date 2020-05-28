@@ -11,11 +11,13 @@
         pointer-events: none;
         transition: all 0.5s;
         overflow: hidden;
+        transform: scale(0);
       }
       #others:target {
         height: 300px;
         pointer-events: auto;
         opacity: 1;
+        transform: scale(1);
       }
       iframe {
         width: 100%;

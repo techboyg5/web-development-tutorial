@@ -23,3 +23,9 @@ a:active {
     text-align: center;
     text-transform: lowercase;
 }
+#disqus_thread::after {
+    content: url(https://github.com/favicon.ico);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

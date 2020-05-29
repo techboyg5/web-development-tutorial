@@ -4,8 +4,6 @@ body {
     background-attachment: fixed;
     background-color: yellow;
     animation: show 0.25s;
-    /* This line was pr=orted from normalize.css */
-    margin: 0;
 }
 @keyframes show {
     from {opacity: 0;}

@@ -25,7 +25,7 @@ a:active {
 }
 #disqus_thread::after {
     content: url(https://github.com/favicon.ico);
-    position: absolute;
+    position: relative;
     right: 0;
     bottom: 0;
 }

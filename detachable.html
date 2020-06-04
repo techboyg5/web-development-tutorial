@@ -13,13 +13,11 @@
         <script>
             var chapters = window.open("chapters-frame.html", "chapters-frame", "top=0, left=0, width=512, height=384");
             var pages = window.open("chapter1/pages-frame.html", "pages-frame", "top=384, left=0, width=512, height=384");
-            /*var main = window.open("chapter1/page1.html", "main-frame", "top=0, left=512, width=1024, height=768");*/
-            window.name = "main-frame";
-            window.location = "chapter1/page1.html";
+            var main = window.open("chapter1/page1.html", "main-frame", "top=0, left=512, width=1024, height=768");
             function attach() {
                 chapters.close();
                 pages.close();
-                /*main.close();*/
+                main.close();
                 window.location = "frames.html";
             }
         </script>

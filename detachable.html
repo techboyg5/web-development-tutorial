@@ -9,12 +9,21 @@
     <body>
         <h1>Detachable Frames View</h1>
         <p>If you don't see three windows opening, then make sure popups and JavaScript for this page are both enabled in your browser.</p>
-        <a href="#" onclick="framesView();">Click here to exit Detachable Frames View.</a>
+        <a href="#" onclick="restart();">Restart Detachable Frames View</a>
+        <a href="#" onclick="attach();">Attach windows</a>
         <script>
             var chapters = window.open("chapters-frame.html", "chapters-frame", "top=0, left=0, width=512, height=384");
             var pages = window.open("chapter1/pages-frame.html", "pages-frame", "top=384, left=0, width=512, height=384");
             var main = window.open("chapter1/page1.html", "main-frame", "top=0, left=512, width=1024, height=768");
-            function framesView() {
+            function restart() {
+                chapters.close();
+                pages.close();
+                main.close();
+                var chapters = window.open("chapters-frame.html", "chapters-frame", "top=0, left=0, width=512, height=384");
+                var pages = window.open("chapter1/pages-frame.html", "pages-frame", "top=384, left=0, width=512, height=384");
+                var main = window.open("chapter1/page1.html", "main-frame", "top=0, left=512, width=1024, height=768");
+            }
+            function attach() {
                 chapters.close();
                 pages.close();
                 main.close();

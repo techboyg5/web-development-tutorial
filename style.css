@@ -14,3 +14,25 @@ body {
     text-align: center;
     text-transform: lowercase;
 }
+.nav {
+        overflow: auto;
+        background-color: black;
+        padding: 8px;
+      }
+      .nav .left {
+        float: left;
+      }
+      .nav .right {
+        float: right;
+      }
+      .nav a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+      }
+      .nav a:hover {
+        background-color: gray;
+      }
+      .nav a:active {
+        background-color: silver;
+      }

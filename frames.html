@@ -5,12 +5,15 @@
     <title>Web Development Tutorial</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <frameset cols="20%, 80%">
-    <frameset rows="50%, 50%">
-      <frame src="chapters-frame.html" name="chapters-frame" />
-      <frame src="chapter1/pages-frame.html" name="pages-frame" />
+  <frameset rows="36, *">
+    <frame src="https://techboyg5.github.io/navbar.html#webdev" />
+    <frameset cols="20%, 80%">
+      <frameset rows="50%, 50%">
+        <frame src="https://techboyg5.github.io/web-development-tutorial/chapters-frame.html" name="chapters-frame" />
+        <frame src="https://techboyg5.github.io/web-development-tutorial/chapter1/pages-frame.html" name="pages-frame" />
+      </frameset>
+      <frame src="https://techboyg5.github.io/web-development-tutorial/chapter1/page1.html" name="main-frame" />
     </frameset>
-    <frame src="chapter1/page1.html" name="main-frame" />
     <noframes>
       <body>
         <p>Your browser does not support frames. Here's a link to the <a href="toc.html">no frames</a> version.</p>

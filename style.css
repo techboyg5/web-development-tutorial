@@ -9,11 +9,6 @@ body {
     from {opacity: 0;}
     to {opacity: 1;}
 }
-.footer {
-    font-size: smaller;
-    text-align: center;
-    text-transform: lowercase;
-}
 .nav {
         overflow: auto;
         background-color: black;

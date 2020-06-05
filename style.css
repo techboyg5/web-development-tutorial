@@ -11,7 +11,6 @@ body {
 }
 .nav {
         overflow: auto;
-        background-color: black;
         padding: 10px;
       }
       .nav .left {
@@ -21,13 +20,13 @@ body {
         float: right;
       }
       .nav a {
-        color: white;
+        color: black;
         padding: 10px;
         text-decoration: none;
       }
       .nav a:hover {
-        background-color: gray;
+        background-color: silver;
       }
       .nav a:active {
-        background-color: silver;
+        background-color: gray;
       }

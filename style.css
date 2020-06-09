@@ -10,9 +10,13 @@ body {
     to {opacity: 1;}
 }
 .nav {
-        overflow: auto;
         margin: 8px;
       }
+.nav::after {
+  content: "";
+  clear: both;
+  display: table;
+}
       .nav .left {
         float: left;
       }

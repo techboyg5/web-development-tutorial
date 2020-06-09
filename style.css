@@ -11,22 +11,11 @@ body {
 }
 .nav {
         overflow: auto;
-        padding: 10px;
+        margin: 8px;
       }
       .nav .left {
         float: left;
       }
       .nav .right {
         float: right;
-      }
-      .nav a {
-        color: black;
-        padding: 10px;
-        text-decoration: none;
-      }
-      .nav a:hover {
-        background-color: silver;
-      }
-      .nav a:active {
-        background-color: gray;
       }

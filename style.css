@@ -23,3 +23,8 @@ body {
       .nav .right {
         float: right;
       }
+@media (prefers-reduced-motion) {
+    body {
+        animation: none;
+    }
+}

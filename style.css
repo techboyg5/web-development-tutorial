@@ -1,0 +1,5 @@
+body {
+  background-image: linear-gradient(yellow, orange);
+  background-attachment: fixed;
+  background-color: yellow;
+}

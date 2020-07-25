@@ -44,7 +44,6 @@
         <div class="col-sm">
           <h1>{{ page.title }}</h1>
           {{ content }}
-          {% if page.comments %}
           <div id="comments" class="my-3">
                 <h2>Comments</h2>
                 <div class="alert alert-primary alert-dismissible fade show" role="alert">
@@ -66,7 +65,6 @@
                     async>
                 </script>
             </div>
-          {% endif %}
             <footer class="my-3">
                 &copy; 2020 by techboyg5. All rights reserved. Licensed under the MIT License. <a href="https://github.com/techboyg5/web-development-tutorial">GitHub</a>
             </footer>

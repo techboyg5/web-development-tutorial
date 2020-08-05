@@ -1,3 +1,3 @@
 # Web Development Tutorial
 Learn how to make your very own website!
-[Click here](https://techboyg5.github.io/web-development-tutorial/) to see the tutorial.
+[Click here](https://projects.techboyg5blog.com/web-development-tutorial/chapter1/page1.html) to see the tutorial.

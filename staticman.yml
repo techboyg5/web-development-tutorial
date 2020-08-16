@@ -1,5 +1,0 @@
-comments:
-  name: "Web Development Tutorial"
-  requiredFields: ["name", "email", "message"]
-  reCaptcha:
-    enabled: false

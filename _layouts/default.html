@@ -51,6 +51,9 @@
           <div id="content">
             {{ content }}
           </div>
+          {% if page.type == "post" %}
+            {% include comments.html %}
+          {% endif %}
           <div id="comments" class="my-3">
                 <h2>Comments</h2>
                 <div class="alert alert-primary alert-dismissible fade show" role="alert">

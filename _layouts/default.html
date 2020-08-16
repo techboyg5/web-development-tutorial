@@ -54,6 +54,9 @@
           {% if page.comments %}
             {% include comments.html %}
           {% endif %}
+          {% if page.staticman %}
+            {% include staticman/comments.html %}
+          {% endif %}
             <footer class="my-3">
               <nav aria-label="Pagination">
                 <ul class="pagination justify-content-center">

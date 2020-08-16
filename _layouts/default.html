@@ -51,7 +51,7 @@
           <div id="content">
             {{ content }}
           </div>
-          {% if page.type == "post" %}
+          {% if page.comments %}
             {% include comments.html %}
           {% endif %}
           <div id="comments" class="my-3">

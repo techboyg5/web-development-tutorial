@@ -33,10 +33,10 @@
       <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="{{ page.prevpage }}">Previous Page</a>
+            <a class="nav-link" href="{{ page.prevpage }}" title="{{ page.prevtitle }}">Previous Page</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ page.nextpage }}">Next Page</a>
+            <a class="nav-link" href="{{ page.nextpage }}" title="{{ page.nexttitle }}">Next Page</a>
           </li>
         </ul>
       </div>
@@ -65,8 +65,8 @@
             <footer class="my-3">
               <nav aria-label="Pagination">
                 <ul class="pagination justify-content-center">
-                  <li class="page-item"><a class="page-link" href="{{ page.prevpage }}">Previous</a></li>
-                  <li class="page-item"><a class="page-link" href="{{ page.nextpage }}">Next</a></li>
+                  <li class="page-item"><a class="page-link" href="{{ page.prevpage }}" title="{{ page.prevtitle }}">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="{{ page.nextpage }}" title="{{ page.nexttitle }}">Next</a></li>
                 </ul>
               </nav>
                 <div class="row">

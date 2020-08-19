@@ -46,6 +46,8 @@
 			/* Sidebar */
 			.left-sidebar {
 			width: 25%;
+			}
+			.left-sidebar-inner {
 			background-color: white;
 			margin: 10px;
 			padding: 10px;
@@ -61,6 +63,8 @@
 			/* Content Container */
 			.content-container {
 			width: 75%;
+			}
+			.content-container-inner {
 			background-color: white;
 			margin: 10px;
 			padding: 10px;
@@ -162,6 +166,7 @@
 		</nav>
 		<div class="inner-container">
 			<div class="left-sidebar">
+				<div class="left-sidebar-inner">
 					<h2>Chapter 1 - Welcome!</h2>
 					<ul>
 						<li><a class="left-sidebar-link {% if page.url == '/chapter1/page1.html' %}active{% endif %}" href="/web-development-tutorial/chapter1/page1.html">1.1 - Welcome!</a>
@@ -171,8 +176,10 @@
 						<li><a class="left-sidebar-link {% if page.url == '/chapter2/page1.html' %}active{% endif %}" href="/web-development-tutorial/chapter2/page1.html">2.1 - What is HTML?</a>
 						<li><a class="left-sidebar-link {% if page.url == '/chapter2/page2.html' %}active{% endif %}" href="/web-development-tutorial/chapter2/page2.html">2.2 - Setting Up</a>
 					</ul>
+				</div>
 			</div>
 			<div class="content-container">
+				<div class="content-container-inner">
 					<h1>{{ page.title }}</h1>
 					<div id="content">
 						{{ content }}
@@ -193,6 +200,7 @@
 							<p class="copyright-text">&copy; 2020 by techboyg5. Licensed under the MIT License.</p>
 						</div>
 					</footer>
+				</div>
 			</div>
 		</div>
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>

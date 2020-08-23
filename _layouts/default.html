@@ -104,6 +104,15 @@
 			.footer {
 			margin: 15px 0;
 			}
+			/* Responsive Design */
+			@media (max-width: 768px) {
+  			.inner-container {
+    			flex-direction: column-reverse;
+  			}
+  			.left-sidebar, .content-container {
+    			width: unset;
+  			}
+			}
 			/* Dark Mode */
 			@media (prefers-color-scheme: dark) {
 			body {

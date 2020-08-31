@@ -5,17 +5,140 @@ prevpage: /web-development-tutorial/chapter1/page1.html
 nextpage: /web-development-tutorial/chapter2/page2.html
 prevtitle: 1.1 - Welcome!
 nexttitle: 2.2 - Setting Up
-amp-scripts: <script async custom-element="amp-gist" src="https://cdn.ampproject.org/v0/amp-gist-0.1.js"></script>
 ---
 <p>HTML is the markup language of the Web.</p>
 <p>HTML stands for Hypertext Markup Language.</p>
 <p>HTML defines the structure of all pages on the Web. Each webpage is an HTML document.</p>
 <p>HTML is not for styling, with CSS used instead. HTML is also not a programming language, with JavaScript used instead.</p>
 <h2>What does an HTML document look like?</h2>
-<p>Great question! This is the code used on <a href="https://projects.techboyg5blog.com/web-development-tutorial/chapter1/page1.html">this page</a> as of 29 August 2020:</p>
-<amp-gist
-  data-gistid="c8f9f49cf20b88bb18522b3b0e62c0c4"
-  layout="fixed-height"
-  height="5160"
->
-</amp-gist>
+<p>Maybe my main page?</p>
+<pre>
+  &lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async src="https://www.googletagmanager.com/gtag/js?id=UA-167358769-2"&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167358769-2');
+&lt;/script&gt;
+        
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;techboyg5's Projects&lt;/title&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+        &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class="jumbotron jumbotron-fluid"&gt;
+            &lt;div class="container mb-3"&gt;
+                &lt;h1 class="display-4"&gt;techboyg5's Projects&lt;/h1&gt;
+                &lt;p class="lead"&gt;Learn about our projects, including websites and browser extensions.&lt;/p&gt;
+                &lt;hr&gt;
+                &lt;p&gt;Below are all of my projects, starting with websites and then browser extensions.&lt;/p&gt;
+            &lt;/div&gt;
+              &lt;/div&gt;
+        &lt;div class="container"&gt;
+            &lt;h2&gt;Websites&lt;/h2&gt;
+          &lt;div class="row"&gt;
+            &lt;div class="col-sm"&gt;
+              &lt;div class="card shadow my-3"&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h5 class="card-title"&gt;Web Development Tutorial&lt;/h5&gt;
+                  &lt;p class="card-text"&gt;Learn how to make your very own website!&lt;/p&gt;
+                  &lt;a href="https://projects.techboyg5blog.com/web-development-tutorial/chapter1/page1.html" class="btn btn-primary stretched-link"&gt;Web Development Tutorial&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+              &lt;div class="col-sm"&gt;
+              &lt;div class="card shadow my-3"&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h5 class="card-title"&gt;Single Color Pages&lt;/h5&gt;
+                  &lt;p class="card-text"&gt;Just want to look at some boring colors and nothing else? Choose between 17 background colors, sit back and relax.&lt;/p&gt;
+                  &lt;a href="https://projects.techboyg5blog.com/single-color-pages/" class="btn btn-primary stretched-link"&gt;Single Color Pages&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+              &lt;div class="col-sm"&gt;
+              &lt;div class="card shadow my-3"&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h5 class="card-title"&gt;My Favorite Songs Carousel&lt;/h5&gt;
+                  &lt;p class="card-text"&gt;Need a carousel example? Use mine!&lt;/p&gt;
+                  &lt;a href="https://projects.techboyg5blog.com/favoritesongscarousel/" class="btn btn-primary stretched-link"&gt;My Favorite Songs Carousel&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+              &lt;div class="col-sm"&gt;
+              &lt;div class="card shadow my-3"&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h5 class="card-title"&gt;My Pong Game&lt;/h5&gt;
+                  &lt;p class="card-text"&gt;Take a look at my Tynker project, now on GitHub! This is a work in progress by the way.&lt;/p&gt;
+                  &lt;a href="https://github.com/techboyg5/techboyg5.github.io/blob/master/pong.html" class="btn btn-primary stretched-link"&gt;My Pong Game&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+            &lt;h2&gt;Browser Extensions&lt;/h2&gt;
+          &lt;div class="row"&gt;
+              &lt;div class="col-sm"&gt;
+              &lt;div class="card shadow my-3"&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h5 class="card-title"&gt;Left Side Dropdowns&lt;/h5&gt;
+                  &lt;p class="card-text"&gt;Using Pale Moon but want your dropdowns the proper way? Get this extension to fix the problem.&lt;/p&gt;
+                  &lt;a href="https://projects.techboyg5blog.com/left-side-dropdowns/" class="btn btn-primary stretched-link"&gt;Left Side Dropdowns&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm"&gt;
+              &lt;div class="card shadow my-3"&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h5 class="card-title"&gt;CleanStart&lt;/h5&gt;
+                  &lt;p class="card-text"&gt;Hate your current startpage? Make it clean with CleanStart!&lt;/p&gt;
+                  &lt;a href="https://addons.mozilla.org/en-US/firefox/addon/cleanstart/" class="btn btn-primary stretched-link"&gt;CleanStart&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm"&gt;
+              &lt;div class="card shadow my-3"&gt;
+                &lt;div class="card-body"&gt;
+                  &lt;h5 class="card-title"&gt;BrightTheme&lt;/h5&gt;
+                  &lt;p class="card-text"&gt;Are you always looking on the dark side? Turn it around and look on the Bright Side with BrightTheme!&lt;/p&gt;
+                  &lt;a href="https://addons.mozilla.org/en-US/firefox/addon/brighttheme/" class="btn btn-primary stretched-link"&gt;BrightTheme&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+            &lt;h2&gt;Miscellaneous&lt;/h2&gt;
+          &lt;div class="row"&gt;
+            &lt;div class="col-sm"&gt;
+                &lt;div class="card shadow my-3"&gt;
+                    &lt;div class="card-body"&gt;
+                        &lt;h5 class="card-title"&gt;Check out my GitHub profile for the source code for all of my projects!&lt;/h5&gt;
+                        &lt;p class="card-text"&gt;Want to see how I made my projects? My projects are open source, and each one has it's own repository on GitHub. Check them out!&lt;/p&gt;
+                        &lt;a href="https://github.com/techboyg5/" class="btn btn-primary stretched-link"&gt;techboyg5 on GitHub&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-sm"&gt;
+                &lt;div class="card shadow my-3"&gt;
+                    &lt;div class="card-body"&gt;
+                        &lt;h5 class="card-title"&gt;Blog&lt;/h5&gt;
+                        &lt;p class="card-text"&gt;Check out my blog for the latest and greatest tech news!&lt;/p&gt;
+                        &lt;a href="https://techboyg5blog.com/" class="btn btn-primary stretched-link"&gt;Visit My Blog&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+            &lt;footer class="my-3"&gt;
+                &lt;p&gt;&copy; 2020 by techboyg5. All rights reserved. Licensed under the MIT License. &lt;a href="/privacy.html"&gt;Privacy Policy&lt;/a&gt;&lt;/p&gt;
+            &lt;/footer&gt;
+        &lt;/div&gt;
+        &lt;script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"&gt;&lt;/script&gt;
+        &lt;script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"&gt;&lt;/script&gt;
+        &lt;script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+</pre>

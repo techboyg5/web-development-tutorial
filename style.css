@@ -135,8 +135,7 @@ img {
 max-width: 100%;
 height: auto;
 }
-/* GitHub Issue Button Container */
-/* The styles for the actual button are not here because this is a Web Component */
-.gh-issue-button {
+/* GitHub Issue Button */
+gh-issue-button {
 float: right;
 }

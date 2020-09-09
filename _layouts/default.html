@@ -19,16 +19,16 @@
 		<link rel="stylesheet" href="/web-development-tutorial/style.css">
 	</head>
 	<body>
-		<nav class="tutorial-nav">
+		<header class="tutorial-nav">
 			<a class="tutorial-brand" href="#">Web Development Tutorial</a>
-			<div class="nav-content">
+			<nav class="nav-content">
 				<a class="nav-link" href="{{ page.prevpage }}" title="{{ page.prevtitle }}">Previous Page</a>
 				•
 				<a class="nav-link" href="{{ page.nextpage }}" title="{{ page.nexttitle }}">Next Page</a>
-			</div>
-		</nav>
+			</nav>
+		</header>
 		<div class="inner-container">
-			<div class="left-sidebar">
+			<aside class="left-sidebar">
 					<h2>Chapter 1 - Welcome!</h2>
 					<ul>
 						<li><a class="left-sidebar-link {% if page.url == '/chapter1/page1.html' %}active{% endif %}" href="/web-development-tutorial/chapter1/page1.html">1.1 - Welcome!</a></li>
@@ -38,17 +38,17 @@
 						<li><a class="left-sidebar-link {% if page.url == '/chapter2/page1.html' %}active{% endif %}" href="/web-development-tutorial/chapter2/page1.html">2.1 - What is HTML?</a></li>
 						<li><a class="left-sidebar-link {% if page.url == '/chapter2/page2.html' %}active{% endif %}" href="/web-development-tutorial/chapter2/page2.html">2.2 - Setting Up</a></li>
 					</ul>
-			</div>
-			<div class="content-container">
+			</aside>
+			<main class="content-container">
 					<div class="gh-issue-button">
 						<gh-issue-button>
 						</gh-issue-button>
 					</div>
 					<script src="https://techboyg5-php.herokuapp.com/gh-issue-button.php?user=techboyg5&repo=web-development-tutorial&path={{ page.gh-path }}" async></script>
-					<div id="content">
+					<article id="content">
 						<h1>{{ page.title }}</h1>
 						{{ content }}
-					</div>
+					</article>
 					<hr>
 					<div class="pagination">
 						<a class="pagination-link" href="{{ page.prevpage }}" title="{{ page.prevtitle }}">Previous</a>
@@ -56,10 +56,10 @@
 						<a class="pagination-link" href="{{ page.nextpage }}" title="{{ page.nexttitle }}">Next</a>
 					</div>
 					<hr>
-					<div class="footer">
+					<footer class="footer">
 						<p class="copyright-text">© 2020 by techboyg5. Licensed under the MIT License. <a href="https://github.com/techboyg5/web-development-tutorial">Fork the project on GitHub.</a></p>
-					</div>
-			</div>
+					</footer>
+			</main>
 		</div>
 	</body>
 </html>

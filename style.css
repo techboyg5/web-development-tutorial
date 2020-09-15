@@ -79,6 +79,16 @@ body {
     			width: unset;
   			}
 			}
+			/* Seperate Scroll Containers */
+			@media (min-width: 768px) {
+			body {
+			overflow: hidden;
+			}
+  			.left-sidebar, .content-container {
+    			height: calc(100vh - 120px);
+    			overflow: auto;
+  			}
+			}
 			/* Dark Mode */
 			@media (prefers-color-scheme: dark) {
 			body {

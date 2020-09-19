@@ -66,6 +66,7 @@ body {
 			/* Footer */
 			.footer {
 			margin: 15px 0;
+			text-align: center;
 			}
 			/* Responsive Design */
 			@media (max-width: 767px) {

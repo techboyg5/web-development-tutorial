@@ -136,18 +136,3 @@ img {
 max-width: 100%;
 height: auto;
 }
-/* Octocat */
-.octocat-container {
-float: right;
-}
-.octocat-link {
-display: block;
-}
-.octocat-img:hover {
-animation: jump 1s infinite;
-}
-@keyframes jump {
-0% {transform: none;}
-50% {transform: translateY(-15px);}
-100% {transform: none;}
-}

@@ -44,6 +44,9 @@ body {
 			border: 1px solid silver;
 			box-shadow: 2px 2px 5px silver;
 			}
+			.content-container-full {
+				width: 100%;
+			}
 			/* Navbar */
 			.tutorial-nav {
 			display: flex;

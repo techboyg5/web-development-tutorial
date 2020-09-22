@@ -1,15 +1,7 @@
 $( function() {
   $( "#editor-dialog" ).dialog({
     autoOpen: false,
-    width: 600,
-    show: {
-      effect: "blind",
-      duration: 1000
-    },
-    hide: {
-      effect: "explode",
-      duration: 1000
-    }
+    width: 600
   });
   $( "#editor-dialog-opener" ).on( "click", function() {
     $( "#editor-dialog" ).dialog( "open" );

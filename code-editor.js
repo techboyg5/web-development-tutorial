@@ -9,6 +9,11 @@ $( function() {
     hide: {
         effect: "fade",
         duration: 200
+    },
+    buttons: {
+      "Close": function() {
+        $( this ).dialog( "close" );
+      }
     }
   });
   $( "#editor-dialog-opener" ).on( "click", function() {

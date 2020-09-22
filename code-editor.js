@@ -1,6 +1,7 @@
 $( function() {
   $( "#editor-dialog" ).dialog({
     autoOpen: false,
+    width: 600,
     show: {
       effect: "blind",
       duration: 1000

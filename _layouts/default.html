@@ -72,7 +72,8 @@
     					<li><a href="#html">HTML</a></li>
     					<li><a href="#css">CSS</a></li>
     					<li><a href="#javascript">JavaScript</a></li>
-					<li><a href="#preview" onclick="goHtml();">Preview</a></li>
+					<li><a href="#preview">Preview</a></li>
+					<li><a href="#help">Help</a></li>
   				</ul>
 				<div id="html">
 					<label for="htmlInput" style="display:block">HTML code:</label>
@@ -88,6 +89,18 @@
 				</div>
 				<div id="preview">
 					<iframe id="codeResult" src="about:blank" height="300" style="width:100%"></iframe>
+					<button class="ui-button ui-widget ui-corner-all" onclick="goHtml();">Update Preview</button>
+				</div>
+				<div id="help">
+					<p>The Code Editor dialog (which you're looking at right now) has five tabs:</p>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>Preview</li>
+						<li>Help (which you're looking at right now)</li>
+					</ul>
+					<p>To use the Code Editor, enter HTML, CSS, and JavaScript code in their respective tabs. To see what the code would look like, move over to the Preview tab and click the "Update Preview" button.</p>
 				</div>
 			</div>
 		</div>

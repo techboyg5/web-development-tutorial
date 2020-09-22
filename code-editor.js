@@ -1,8 +1,15 @@
 $( function() {
   $( "#editor-dialog" ).dialog({
     autoOpen: false,
-    modal: true,
-    width: 600
+    width: 600,
+    show: {
+        effect: "fade",
+        duration: 200
+    },
+    hide: {
+        effect: "fade",
+        duration: 200
+    }
   });
   $( "#editor-dialog-opener" ).on( "click", function() {
     $( "#editor-dialog" ).dialog( "open" );

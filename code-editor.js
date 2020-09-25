@@ -42,6 +42,7 @@ function goHtml() {
         <script>
           ${js}
         <\/script>
+        <script src="https://gh-canon.github.io/stack-snippet-console/console.min.js"><\/script>
       </body>
     </html>
   `;

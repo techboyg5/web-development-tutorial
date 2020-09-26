@@ -50,3 +50,10 @@ function goHtml() {
   const blob = new Blob([template], {type: 'text/html'});
   document.getElementById("codeResult").src = URL.createObjectURL(blob);
 }
+
+
+var topNavigation = document.getElementsByClassName("tutorial-nav")[0];
+document.addEventListener("scroll", stickNav);
+function stickNav() {
+  topNavigation.style.top = window.scrollY + 'px';
+}

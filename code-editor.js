@@ -27,6 +27,7 @@ function goHtml() {
   const html = document.getElementById("htmlInput").value;
   const css = document.getElementById("cssInput").value;
   const js = document.getElementById("jsInput").value;
+  const head = document.getElementById("headInput").value;
   const template = `
     <!DOCTYPE html>
     <html>
@@ -36,7 +37,7 @@ function goHtml() {
         <style>
           ${css}
         </style>
-        <script src="https://gh-canon.github.io/stack-snippet-console/console.min.js"><\/script>
+        ${head}
       </head>
       <body>
         ${html}

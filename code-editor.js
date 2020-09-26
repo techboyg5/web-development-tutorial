@@ -36,13 +36,13 @@ function goHtml() {
         <style>
           ${css}
         </style>
+        <script src="https://gh-canon.github.io/stack-snippet-console/console.min.js"><\/script>
       </head>
       <body>
         ${html}
         <script>
           ${js}
         <\/script>
-        <script src="https://gh-canon.github.io/stack-snippet-console/console.min.js"><\/script>
       </body>
     </html>
   `;

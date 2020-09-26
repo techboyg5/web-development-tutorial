@@ -45,7 +45,7 @@ body {
 			box-shadow: 2px 2px 5px silver;
 			}
 			.content-container-full {
-				width: 100%;
+			width: 100%;
 			}
 			/* Navbar */
 			.tutorial-nav {
@@ -55,6 +55,8 @@ body {
 			margin: 10px;
 			border: 1px solid silver;
 			box-shadow: 2px 2px 5px silver;
+			position: relative;
+			z-index: 9999;
 			}
 			.tutorial-brand {
 			font-weight: bold;

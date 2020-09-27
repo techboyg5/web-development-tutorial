@@ -92,7 +92,7 @@ a:hover, a:focus {
 .dark body {
 	background-color: #0f0f0f;
 }
-.tutorial-nav, .left-sidebar, .content-container {
+.dark .tutorial-nav, .dark .left-sidebar, .dark .content-container {
 	color: white;
 	background-color: black;
 	border: 1px solid gray;

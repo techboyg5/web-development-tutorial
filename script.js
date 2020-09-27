@@ -80,20 +80,6 @@ function stickNav() {
         });
     });
 
-var navContent = document.getElementsByClassName("nav-content")[0];
-
-if (window.localStorage.getItem("darkmode") == "dark") {
-  document.documentElement.classList.add("dark");
-  var toggle = document.createElement("a");
-  toggle.outerHTML = '• <a id="lightdarktoggle" class="nav-link" href="javascript:dark();">Dark Mode</a>';
-  navContent.appendChild(toggle);
-} else {
-  document.documentElement.classList.remove("dark");
-  var toggle = document.createElement("a");
-  toggle.outerHTML = '• <a id="lightdarktoggle" class="nav-link" href="javascript:light();">Light Mode</a>';
-  navContent.appendChild(toggle);
-}
-
 function dark() {
   window.localStorage.setItem("darkmode", "dark");
   document.documentElement.classList.add("dark");

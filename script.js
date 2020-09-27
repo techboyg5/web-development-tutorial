@@ -54,11 +54,6 @@ var topNavigation = document.getElementsByClassName("tutorial-nav")[0];
 document.addEventListener("scroll", stickNav);
 function stickNav() {
   topNavigation.style.top = window.scrollY + 'px';
-  if (window.scrollY == 0) {
-    topNavigation.classList.remove("not-top");
-  } else {
-    topNavigation.classList.add("not-top");
-  }
 }
 
 

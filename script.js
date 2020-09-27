@@ -67,10 +67,20 @@ function stickNav() {
         $.contextMenu({
             selector: '.content-container', 
             callback: function(key, options) {
-                document.execCommand(key);
+              document.execCommand(key);
             },
             items: {
-                "copy": {name: "Copy", icon: "copy"}
+              "copy": {name: "Copy", icon: "copy"}
+            }
+        });
+        $.contextMenu({
+            selector: 'textarea', 
+            callback: function(key, options) {
+              document.execCommand(key);
+            },
+            items: {
+              "cut": {name: "Cut", icon: "cut"},
+              "copy": {name: "Copy", icon: "copy"}
             }
         });
     });

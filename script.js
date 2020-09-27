@@ -60,3 +60,17 @@ function stickNav() {
     topNavigation.classList.add("not-top");
   }
 }
+
+
+
+    $(function() {
+        $.contextMenu({
+            selector: '.content-container', 
+            callback: function(key, options) {
+                document.execCommand(key);
+            },
+            items: {
+                "copy": {name: "Copy", icon: "copy"}
+            }
+        });
+    });

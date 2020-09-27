@@ -11,6 +11,7 @@
   ],
   "start_url": "/web-development-tutorial/chapter1/page1",
   "display": "standalone",
+  "scope": "https://projects.techboyg5blog.com/web-development-tutorial/",
   "theme_color": "#eeeeee",
   "background_color": "#eeeeee"
 }

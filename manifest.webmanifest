@@ -1,3 +1,16 @@
 {
-  name: "Web Development Tutorial"
+  "name": "Web Development Tutorial",
+  "short_name": "Web Dev Tut",
+  "description": "The Web Development Tutorial by techboyg5.",
+  "icons": [
+    {
+      "src": "html5.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": "/web-development-tutorial/chapter1/page1",
+  "display": "standalone",
+  "theme_color": "#eeeeee",
+  "background_color": "#eeeeee"
 }

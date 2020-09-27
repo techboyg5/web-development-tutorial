@@ -27,7 +27,6 @@ function goHtml() {
   const html = document.getElementById("htmlInput").value;
   const css = document.getElementById("cssInput").value;
   const js = document.getElementById("jsInput").value;
-  const head = document.getElementById("headInput").value;
   const template = `
     <!DOCTYPE html>
     <html>
@@ -37,7 +36,6 @@ function goHtml() {
         <style>
           ${css}
         </style>
-        ${head}
       </head>
       <body>
         ${html}
@@ -62,7 +60,3 @@ function stickNav() {
     topNavigation.classList.add("not-top");
   }
 }
-
-if (window.location.href.endsWith(".html")) {
-  window.history.replaceState(null,null,window.location.href.replace(".html", ""))
-};

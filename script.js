@@ -3,11 +3,11 @@ $( function() {
     autoOpen: false,
     width: 600,
     show: {
-        effect: "fade",
+        effect: "scale",
         duration: 200
     },
     hide: {
-        effect: "fade",
+        effect: "scale",
         duration: 200
     },
     buttons: {

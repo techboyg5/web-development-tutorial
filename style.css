@@ -61,7 +61,6 @@ a:hover, a:focus {
 .tutorial-brand {
 	font-weight: bold;
 	text-decoration: none;
-	color: black;
 	font-size: 2em;
 }
 .nav-content {
@@ -90,6 +89,21 @@ a:hover, a:focus {
 	}
 }
 /* Dark Mode */
+.dark body {
+	background-color: #0f0f0f;
+}
+.tutorial-nav, .left-sidebar, .content-container {
+	color: white;
+	background-color: black;
+	border: 1px solid gray;
+	box-shadow: 2px 2px 5px gray;
+}
+.dark a {
+	color: yellow;
+}
+.dark a:hover, .dark a:focus {
+	color: orange;
+}
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color: #0f0f0f;
@@ -99,9 +113,6 @@ a:hover, a:focus {
 		background-color: black;
 		border: 1px solid gray;
 		box-shadow: 2px 2px 5px gray;
-	}
-	.tutorial-brand {
-		color: white;
 	}
 	a {
 		color: yellow;

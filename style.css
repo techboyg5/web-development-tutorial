@@ -3,145 +3,137 @@
 	box-sizing: border-box;
 }
 body {
-			font-family: 'Roboto', sans-serif;
-			background-color: #eeeeee;
-			margin: 0;
-			}
-			/* Links */
-			a {
-			text-decoration: none;
-			color: blue;
-			}
-			a:hover, a:focus {
-			text-decoration: underline;
-			color: darkblue;
-			}
-			/* Flex Container */
-			.inner-container {
-			display: flex;
-			}
-			/* Sidebar */
-			.left-sidebar {
-			width: 25%;
-			background-color: white;
-			margin: 10px;
-			padding: 10px;
-			border: 1px solid silver;
-			box-shadow: 2px 2px 5px silver;
-			}
-			.left-sidebar-link.active {
-			color: red;
-			}
-			.left-sidebar-link.active:hover, .left-sidebar-link.active:focus {
-			color: darkred;
-			}
-			/* Content Container */
-			.content-container {
-			width: 75%;
-			background-color: white;
-			margin: 10px;
-			padding: 10px;
-			border: 1px solid silver;
-			box-shadow: 2px 2px 5px silver;
-			}
-			.content-container-full {
-			width: 100%;
-			}
-			/* Navbar */
-			.tutorial-nav {
-			display: flex;
-			background-color: white;
-			padding: 10px;
-			margin: 10px;
-			border: 1px solid silver;
-			box-shadow: 2px 2px 5px silver;
-			position: relative;
-			z-index: 9999;
-			}
-			.tutorial-brand {
-			font-weight: bold;
-			text-decoration: none;
-			color: black;
-			font-size: 2em;
-			}
-			.nav-content {
-			margin-left: auto;
-			}
-			/* Pagination */
-			.pagination {
-			text-align: center;
-			margin: 15px 0;
-			}
-			/* Footer */
-			.footer {
-			margin: 15px 0;
-			text-align: center;
-			}
-			/* Responsive Design */
-			@media (max-width: 767px) {
-			.tutorial-nav {
-			flex-direction: column;
-			}
-  			.inner-container {
-    			flex-direction: column-reverse;
-  			}
-  			.left-sidebar, .content-container {
-    			width: unset;
-  			}
-			}
-			/* Dark Mode */
-			@media (prefers-color-scheme: dark) {
-			body {
-			background-color: #0f0f0f;
-			}
-			.left-sidebar {
-			color: white;
-			background-color: black;
-			border: 1px solid gray;
-			box-shadow: 2px 2px 5px gray;
-			}
-			.tutorial-nav {
-			color: white;
-			background-color: black;
-			border: 1px solid gray;
-			box-shadow: 2px 2px 5px gray;
-			}
-			.tutorial-brand {
-			color: white;
-			}
-			.content-container {
-			color: white;
-			background-color: black;
-			border: 1px solid gray;
-			box-shadow: 2px 2px 5px gray;
-			}
-			a {
-			color: yellow;
-			}
-			a:hover, a:focus {
-			color: orange;
-			}
-			}
-			/* Code Previews */
-			.preview-container {
-			padding: 10px;
-			border: 1px solid gray;
-  			transition: all 0.3s;
-			}
-			.preview-container:hover {
-  			box-shadow: 0 5px 10px gray;
-			}
-			.preview-code {
-			max-height: 300px;
-			overflow: auto;
-			}
-			.preview-frame {
-			border: none;
-			width: 100%;
-			height: 300px;
-			}
+	font-family: 'Roboto', sans-serif;
+	background-color: #eeeeee;
+	margin: 0;
+}
+/* Links */
+a {
+	text-decoration: none;
+	color: blue;
+}
+a:hover, a:focus {
+	text-decoration: underline;
+	color: darkblue;
+}
+/* Flex Container */
+.inner-container {
+	display: flex;
+}
+/* Sidebar */
+.left-sidebar {
+	width: 25%;
+	background-color: white;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid silver;
+	box-shadow: 2px 2px 5px silver;
+}
+.left-sidebar-link.active {
+	color: red;
+}
+.left-sidebar-link.active:hover, .left-sidebar-link.active:focus {
+	color: darkred;
+}
+/* Content Container */
+.content-container {
+	width: 75%;
+	background-color: white;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid silver;
+	box-shadow: 2px 2px 5px silver;
+}
+.content-container-full {
+	width: 100%;
+}
+/* Navbar */
+.tutorial-nav {
+	display: flex;
+	background-color: white;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid silver;
+	box-shadow: 2px 2px 5px silver;
+	position: relative;
+	z-index: 9999;
+	transition: margin 300ms;
+}
+.tutorial-nav.not-top {
+	margin: 0;
+}
+.tutorial-brand {
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	font-size: 2em;
+}
+.nav-content {
+	margin-left: auto;
+}
+/* Pagination */
+.pagination {
+	text-align: center;
+	margin: 15px 0;
+}
+/* Footer */
+.footer {
+	margin: 15px 0;
+	text-align: center;
+}
+/* Responsive Design */
+@media (max-width: 767px) {
+	.tutorial-nav {
+		flex-direction: column;
+	}
+	.inner-container {
+		flex-direction: column-reverse;
+	}
+	.left-sidebar, .content-container {
+		width: unset;
+	}
+}
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #0f0f0f;
+	}
+	.tutorial-nav, .left-sidebar, .content-container {
+		color: white;
+		background-color: black;
+		border: 1px solid gray;
+		box-shadow: 2px 2px 5px gray;
+	}
+	.tutorial-brand {
+		color: white;
+	}
+	a {
+		color: yellow;
+	}
+	a:hover, a:focus {
+		color: orange;
+	}
+}
+/* Code Previews */
+.preview-container {
+	padding: 10px;
+	border: 1px solid gray;
+	transition: all 300ms;
+}
+.preview-container:hover {
+	box-shadow: 0 5px 10px gray;
+}
+.preview-code {
+	max-height: 300px;
+	overflow: auto;
+}
+.preview-frame {
+	border: none;
+	width: 100%;
+	height: 300px;
+}
 /* Images */
 img {
-max-width: 100%;
-height: auto;
+	max-width: 100%;
+	height: auto;
 }

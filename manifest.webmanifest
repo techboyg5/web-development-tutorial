@@ -5,7 +5,7 @@
   "icons": [
     {
       "src": "/web-development-tutorial/html5.svg",
-      "sizes": "any",
+      "sizes": "48x48",
       "type": "image/svg+xml"
     }
   ],

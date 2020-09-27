@@ -55,7 +55,7 @@ function goHtml() {
 var topNavigation = document.getElementsByClassName("tutorial-nav")[0];
 document.addEventListener("scroll", stickNav);
 function stickNav() {
-  topNavigation.style.transform = 'translateY(' + window.scrollY + 'px)';
+  topNavigation.style.top = window.scrollY + 'px';
   if (window.scrollY == 0) {
     topNavigation.classList.remove("not-top");
   } else {

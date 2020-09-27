@@ -80,6 +80,12 @@ function stickNav() {
         });
     });
 
+if (window.localStorage.getItem("darkmode") == "dark") {
+  document.documentElement.classList.add("dark");
+} else {
+  document.documentElement.classList.remove("dark");
+}
+
 function dark() {
   window.localStorage.setItem("darkmode", "dark");
   document.documentElement.classList.add("dark");

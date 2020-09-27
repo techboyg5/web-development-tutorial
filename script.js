@@ -79,10 +79,3 @@ function stickNav() {
             }
         });
     });
-
-
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/web-development-tutorial/worker.js');
-  });
-}

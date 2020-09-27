@@ -4,7 +4,7 @@
   "description": "The Web Development Tutorial by techboyg5.",
   "icons": [
     {
-      "src": "html5.svg",
+      "src": "/web-development-tutorial/html5.svg",
       "sizes": "any",
       "type": "image/svg+xml"
     }

@@ -60,4 +60,5 @@ function stickNav() {
     topNavigation.classList.remove("not-top");
   } else {
     topNavigation.classList.add("not-top");
+  }
 }

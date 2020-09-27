@@ -62,3 +62,7 @@ function stickNav() {
     topNavigation.classList.add("not-top");
   }
 }
+
+if (window.location.href.endsWith(".html")) {
+  window.history.replaceState(null,null,window.location.href.replace(".html", ""))
+};

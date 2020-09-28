@@ -56,30 +56,6 @@ function stickNav() {
   topNavigation.style.top = window.scrollY + 'px';
 }
 
-
-
-    $(function() {
-        $.contextMenu({
-            selector: '.content-container', 
-            callback: function(key, options) {
-              document.execCommand(key);
-            },
-            items: {
-              "copy": {name: "Copy", icon: "copy"}
-            }
-        });
-        $.contextMenu({
-            selector: 'textarea', 
-            callback: function(key, options) {
-              document.execCommand(key);
-            },
-            items: {
-              "cut": {name: "Cut", icon: "cut"},
-              "copy": {name: "Copy", icon: "copy"}
-            }
-        });
-    });
-
 if (window.localStorage.getItem("darkmode") == "dark") {
   document.documentElement.classList.add("dark");
 } else {

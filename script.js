@@ -76,10 +76,11 @@ if (window.top !== window.self) {
 	document.body.innerHTML = `
 		<h2>Framing Not Allowed</h2>
 		<hr>
-		<p>Framing of the techboyg5 Web Development Tutorial is forbidden.</p>
+		<p>Framing of the techboyg5 Web Development Tutorial is not allowed.</p>
 		<p><a href="" target="_blank">Open this page in a new window.</a></p>
 		<footer class="footer">
 			<p>© 2020 by techboyg5. Licensed under the MIT License.</p>
 		</footer>
 	`;
+	document.body.style.backgroundColor = 'transparent';
 }

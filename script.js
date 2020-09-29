@@ -73,7 +73,7 @@ function light() {
 }
 
 if (window.top !== window.self) {
-	const base = document.createElement("base");
+	var base = document.createElement("base");
 	base.setAttribute("target", "_blank");
 	document.head.appendChild("base");
 	document.body.style.backgroundColor = "transparent";

@@ -80,6 +80,6 @@ if (window.top != window.self) {
     <p><a href="" target="_blank">Open this page in a new window.</a></p>
     <footer class="footer">
       <p>© 2020 by techboyg5. Licensed under the MIT License.</p>
-		</footer>
+	</footer>
   `;
 }

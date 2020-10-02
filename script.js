@@ -83,31 +83,3 @@ if (window.top !== window.self) {
 		</footer>
 	`;
 }
-
-function invisibleIframe(jsCode) {
-                const template = `
-                <!DOCTYPE html>
-                <html lang="en">
-                    <head>
-                        <meta charset="utf-8">
-                        <title>JavaScript Sandbox</title>
-                        <style>
-                            body {
-                                font-family: sans-serif;
-                            }
-                        </style>
-                    </head>
-                    <body>
-			<script>
-				${jsCode}
-			</script>
-                    </body>
-                </html>
-                `;
-                const blob = new Blob([template], {type: 'text/html'});
-                const blobUrl = URL.createObjectURL(blob);
-                const iframe = document.createElement("iframe");
-                iframe.style.display = "none";
-                iframe.src = blobUrl;
-                document.body.appendChild(iframe);
-            }

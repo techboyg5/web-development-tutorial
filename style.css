@@ -144,3 +144,7 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+/* Comments Width Fix */
+.utterances {
+	max-width: none;
+}

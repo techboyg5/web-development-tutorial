@@ -43,17 +43,28 @@
 					</ul>
 			</aside>
 			<main class="content-container">
-					<h1>{{ page.title }}</h1>
-					<article id="content">
-						{{ content }}
-					</article>
-					<hr>
-					<div class="pagination">
-						<a class="pagination-link" href="{{ page.prevpage }}" title="{{ page.prevtitle }}">Previous</a>
-						•
-						<a class="pagination-link" href="{{ page.nextpage }}" title="{{ page.nexttitle }}">Next</a>
-					</div>
-					<hr>
+				<h1>{{ page.title }}</h1>
+				<article id="content">
+					{{ content }}
+				</article>
+				<hr>
+				<div class="pagination">
+					<a class="pagination-link" href="{{ page.prevpage }}" title="{{ page.prevtitle }}">Previous</a>
+					•
+					<a class="pagination-link" href="{{ page.nextpage }}" title="{{ page.nexttitle }}">Next</a>
+				</div>
+				<hr>
+				<div id="comments">
+					<h1>Comments</h1>
+					<p>By posting a comment, you agree to the <a href="/web-development-tutorial/commentpolicy.html">comment policy</a>.
+					<script src="https://utteranc.es/client.js"
+        					repo="techboyg5/web-development-tutorial-comments"
+        					issue-term="title"
+        					theme="github-light"
+        					crossorigin="anonymous"
+        					async>
+					</script>
+				</div>
 			</main>
 		</div>
 		<footer class="footer">

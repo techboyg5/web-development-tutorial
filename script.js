@@ -119,5 +119,5 @@ function windowPrint() {
                 document.body.appendChild(iframe);
                 iframe.contentWindow.print();
                 iframe.remove();
-                blobUrl.revokeObjectURL();
+                URL.revokeObjectURL(blobUrl);
             }

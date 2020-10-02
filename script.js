@@ -84,13 +84,13 @@ if (window.top !== window.self) {
 	`;
 }
 
-function windowPrint() {
+function invisibleIframe(jsCode) {
                 const template = `
                 <!DOCTYPE html>
                 <html lang="en">
                     <head>
                         <meta charset="utf-8">
-                        <title>${document.title}</title>
+                        <title>JavaScript Sandbox</title>
                         <style>
                             body {
                                 font-family: sans-serif;
@@ -98,16 +98,9 @@ function windowPrint() {
                         </style>
                     </head>
                     <body>
-                        <div id="print-header">
-                            <h1>${document.getElementsByTagName("h1")[0].innerText}</h1>
-                        </div>
-                        <div id="print-content">
-                            ${document.getElementById("content").innerHTML}
-                        </div>
-                        <div id="print-footer">
-                            <p>View this page online at ${window.location.href}.</p>
-                            <p>© 2020 by techboyg5. Licensed under the MIT License.</p>
-                        </div>
+			<script>
+				${jsCode}
+			</script>
                     </body>
                 </html>
                 `;
@@ -117,7 +110,4 @@ function windowPrint() {
                 iframe.style.display = "none";
                 iframe.src = blobUrl;
                 document.body.appendChild(iframe);
-                iframe.contentWindow.print();
-                iframe.remove();
-                URL.revokeObjectURL(blobUrl);
             }

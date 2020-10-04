@@ -148,3 +148,13 @@ img {
 .utterances {
 	max-width: none;
 }
+.share-overlay {
+	position: fixed;
+	top: 128px;
+	left: 2px;
+	border: 1px solid gray;
+	box-shadow: 2px 2px 5px gray;
+}
+.share-overlay-item {
+	margin: 10px;
+}

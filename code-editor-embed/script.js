@@ -1,8 +1,3 @@
-$( function() {
-  $( "#editor-tabs" ).tabs();
-} );
-
-
 function goHtml() {
   const html = document.getElementById("htmlInput").value;
   const css = document.getElementById("cssInput").value;

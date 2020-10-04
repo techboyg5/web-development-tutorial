@@ -20,30 +20,38 @@
 		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 	</head>
 	<body>
-			<div id="editor-tabs">
-				<ul>
-    					<li><a href="#html">HTML</a></li>
-    					<li><a href="#css">CSS</a></li>
-    					<li><a href="#javascript">JavaScript</a></li>
-					<li><a href="#preview">Preview</a></li>
-  				</ul>
-				<div id="html">
+		<ul class="nav nav-tabs" role="tablist">
+			<li class="nav-item" role="presentation">
+    				<a class="nav-link active" id="html-tab" data-toggle="tab" href="#html" role="tab" aria-controls="html" aria-selected="true">HTML</a>
+			</li>
+    			<li class="nav-item" role="presentation">
+				<a class="nav-link" id="css-tab" data-toggle="tab" href="#css" role="tab" aria-controls="css" aria-selected="false">CSS</a>
+			</li>
+    			<li class="nav-item" role="presentation">
+				<a class="nav-link" id="javascript-tab" data-toggle="tab" href="#javascript" role="tab" aria-controls="javascript" aria-selected="false">JavaScript</a>
+			</li>
+			<li class="nav-item" role="presentation">
+				<a class="nav-link" id="preview-tab" data-toggle="tab" href="#preview" role="tab" aria-controls="preview" aria-selected="false">Preview</a>
+			</li>
+		</ul>
+		<div class="tab-content">
+				<div class="tab-pane fade show active" id="html" role="tabpanel" aria-labelledby="html-tab">
 					<label for="htmlInput" style="display:block">HTML code:</label>
 					<textarea id="htmlInput" cols="40" rows="15" style="width:100%"></textarea>
 				</div>
-				<div id="css">
+				<div class="tab-pane fade" id="css" role="tabpanel" aria-labelledby="css-tab">
 					<label for="cssInput" style="display:block">CSS code:</label>
             				<textarea id="cssInput" cols="40" rows="15" style="width:100%"></textarea>
 				</div>
-				<div id="javascript">
+				<div class="tab-pane fade" id="javascript" role="tabpanel" aria-labelledby="javascript-tab">
 					<label for="jsInput" style="display:block">JavaScript code:</label>
             				<textarea id="jsInput" cols="40" rows="15" style="width:100%"></textarea>
 				</div>
-				<div id="preview">
+				<div class="tab-pane fade" id="preview" role="tabpanel" aria-labelledby="preview-tab">
 					<iframe id="codeResult" src="about:blank" width="500" height="300" style="border:none;width:100%"></iframe>
 					<button class="btn btn-primary" onclick="goHtml();">Update Preview</button>
 				</div>
-			</div>
+		</div>
       		<footer class="footer">
 			<p>© 2020 by techboyg5. Licensed under the MIT License.</p>
 		</footer>

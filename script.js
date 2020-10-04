@@ -1,7 +1,7 @@
 $( function() {
   $( "#editor-dialog" ).dialog({
     autoOpen: false,
-    width: 600,
+    width: 800,
     show: {
         effect: "scale",
         duration: 200

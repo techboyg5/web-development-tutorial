@@ -19,7 +19,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 	</head>
-	<body>
+	<body class="mx-1">
 		<ul class="nav nav-tabs" role="tablist">
 			<li class="nav-item" role="presentation">
     				<a class="nav-link active" id="html-tab" data-toggle="tab" href="#html" role="tab" aria-controls="html" aria-selected="true">HTML</a>
@@ -37,15 +37,15 @@
 		<div class="tab-content">
 				<div class="tab-pane fade show active" id="html" role="tabpanel" aria-labelledby="html-tab">
 					<label for="htmlInput" style="display:block">HTML code:</label>
-					<textarea id="htmlInput" cols="40" rows="15" style="width:100%"></textarea>
+					<textarea id="htmlInput" class="form-control" cols="40" rows="15"></textarea>
 				</div>
 				<div class="tab-pane fade" id="css" role="tabpanel" aria-labelledby="css-tab">
 					<label for="cssInput" style="display:block">CSS code:</label>
-            				<textarea id="cssInput" cols="40" rows="15" style="width:100%"></textarea>
+            				<textarea id="cssInput" class="form-control" cols="40" rows="15"></textarea>
 				</div>
 				<div class="tab-pane fade" id="javascript" role="tabpanel" aria-labelledby="javascript-tab">
 					<label for="jsInput" style="display:block">JavaScript code:</label>
-            				<textarea id="jsInput" cols="40" rows="15" style="width:100%"></textarea>
+            				<textarea id="jsInput" class="form-control" cols="40" rows="15"></textarea>
 				</div>
 				<div class="tab-pane fade" id="preview" role="tabpanel" aria-labelledby="preview-tab">
 					<iframe id="codeResult" src="about:blank" width="500" height="300" style="border:none;width:100%"></iframe>

@@ -103,14 +103,7 @@
                 </html>
                 `);
                 resultFrame.contentWindow.document.close();
-                window.history.replaceState(null,null,`?html=${btoa(html)}&css=${btoa(css)}&js=${btoa(js)}`);
             }
-
-            const urlParams = new URLSearchParams(window.location.search);
-            document.getElementById("html").value = atob(urlParams.get("html"));
-            document.getElementById("css").value = atob(urlParams.get("css"));
-            document.getElementById("js").value = atob(urlParams.get("js"));
-            updateFrame();
         </script>
     </body>
 </html>

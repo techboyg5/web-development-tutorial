@@ -17,7 +17,10 @@
 				•
 				<a class="nav-link" href="{{ page.nextpage }}" title="{{ page.nexttitle }}">Next Page</a>
 				•
-				<a id="editor-dialog-opener" class="nav-link" href="javascript:;" title="{{ page.nexttitle }}">Code Editor</a>
+				<details class="code-editor-details">
+					<summary class="nav-link code-editor-summary" title="Code Editor">Code Editor</summary>
+  					<iframe class="code-editor-iframe" src="/code-editor.html?html=&amp;css=&amp;js="></iframe>
+				</details>
 			</nav>
 		</header>
 		<div class="inner-container">

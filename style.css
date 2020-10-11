@@ -148,6 +148,7 @@ img {
 	max-width: none;
 }
 .code-editor-details {
+	position: relative;
 	display: inline-block;
 }
 .code-editor-summary {

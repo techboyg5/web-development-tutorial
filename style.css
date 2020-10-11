@@ -143,10 +143,6 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-/* Comments Width Fix */
-.utterances {
-	max-width: none;
-}
 .code-editor-details {
 	position: relative;
 	display: inline-block;

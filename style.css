@@ -52,12 +52,10 @@ a:hover, a:focus {
 .tutorial-nav {
 	display: flex;
 	background-color: white;
+	margin: 10px;
 	padding: 10px;
 	border: 1px solid silver;
 	box-shadow: 2px 2px 5px silver;
-	position: relative;
-	z-index: 100;
-	transition: margin 300ms;
 }
 .tutorial-brand {
 	font-weight: bold;

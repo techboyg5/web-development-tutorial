@@ -7,6 +7,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="/style.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	</head>
 	<body>
 		<header class="tutorial-nav">
@@ -16,10 +19,7 @@
 				•
 				<a class="nav-link" href="{{ page.nextpage }}" title="{{ page.nexttitle }}">Next Page</a>
 				•
-				<details class="code-editor-details">
-					<summary class="nav-link code-editor-summary" title="Code Editor">Code Editor</summary>
-  					<iframe class="code-editor-iframe" src="https://sandbox.techboyg5blog.com/code-editor.html"></iframe>
-				</details>
+				<a class="nav-link" href="/code-editor.html" data-fancybox data-type="iframe">Code Editor</a>
 			</nav>
 		</header>
 		<div class="inner-container">

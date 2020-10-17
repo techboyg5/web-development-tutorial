@@ -52,6 +52,9 @@
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 		<script>
+			$('[data-fancybox]').fancybox({
+    				modal: true
+			});
 			function codeEditorClose(event) {
 				if (event.data == 'codeEditorClose') {
 					const confirmPrompt = confirm("Closing the Code Editor will remove all code. Are you sure?");

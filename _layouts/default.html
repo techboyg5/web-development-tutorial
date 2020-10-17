@@ -54,8 +54,8 @@
 		<script>
 			function codeEditorClose(event) {
 				if (event.data == 'codeEditorClose') {
-					const confirm = confirm("Closing the Code Editor will remove all code. Are you sure?");
-					if (confirm == true) {
+					const confirmPrompt = confirm("Closing the Code Editor will remove all code. Are you sure?");
+					if (confirmPrompt == true) {
 						$.fancybox.close();
 					}
 				}

@@ -56,12 +56,7 @@
     				modal: true
 			});
 			function codeEditorClose(event) {
-				if (event.data == 'codeEditorClose') {
-					const confirmPrompt = confirm("Closing the Code Editor will remove all code. Are you sure?");
-					if (confirmPrompt == true) {
-						$.fancybox.close();
-					}
-				}
+				$.fancybox.close();
 			}
 			window.addEventListener("message", codeEditorClose);
 		</script>

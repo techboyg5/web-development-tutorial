@@ -8,8 +8,6 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="/style.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	</head>
 	<body>
 		<header class="tutorial-nav">
@@ -51,5 +49,18 @@
 		<footer class="footer">
 			<p>© 2020 by techboyg5. Licensed under the MIT License.</p>
 		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+		<script>
+			function codeEditorClose(event) {
+				if (event.data == 'codeEditorClose') {
+					const confirm = confirm("Closing the Code Editor will remove all code. Are you sure?");
+					if (confirm == true) {
+						$.fancybox.close();
+					}
+				}
+			}
+			window.addEventListener("message", codeEditorClose);
+		</script>
 	</body>
 </html>

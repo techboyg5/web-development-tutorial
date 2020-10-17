@@ -143,24 +143,3 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-.code-editor-details {
-	position: relative;
-	display: inline-block;
-}
-.code-editor-summary {
-	color: blue;
-	cursor: pointer;
-}
-.code-editor-summary:hover, .code-editor-summary:focus {
-	color: darkblue;
-	text-decoration: underline;
-}
-.code-editor-iframe {
-	width: 640px;
-	height: 480px;
-	position: absolute;
-	top: 100%;
-	right: 0;
-	border: 1px solid black;
-	background-color: white;
-}

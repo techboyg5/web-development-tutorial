@@ -50,12 +50,6 @@
 						<iframe class="comment-form-iframe" src="/comment-form.html?path={{ page.url }}"></iframe>
 					</div>
 					<div class="comments">
-						{% for post in site.posts %}
-						<div class="comment">
-							Comment posted by {{ post.author }} at {{ post.date }}
-							{{ post.content }}
-						</div>
-						{% endfor %}
 					</div>
 				</div>
 				{% endif %}

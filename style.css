@@ -144,7 +144,8 @@ img {
 	height: auto;
 }
 .comment-form-iframe {
+	display: block;
 	width: 100%;
-    border: 0;
-    height: 337px;
+    	border: 0;
+    	height: 337px;
 }

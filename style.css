@@ -143,3 +143,8 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+.comment-form-iframe {
+	width: 100%;
+    border: 0;
+    height: 337px;
+}

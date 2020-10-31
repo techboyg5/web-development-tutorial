@@ -30,7 +30,7 @@
     </form>
     <script>
       const parameters = new URLSearchParams(window.location.search);
-      const path = atob(parameters.get('path'));
+      const path = parameters.get('path');
       document.getElementById("form").name = btoa(path);
       document.getElementById("submit").disabled = false;
     </script>

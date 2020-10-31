@@ -46,10 +46,12 @@
 				<hr>
 				{% if page.comments %}
 				<div class="comments">
-					<div class="comment-form">
-						<iframe class="comment-form-iframe" src="/comment-form.html?path={{ page.url }}"></iframe>
-					</div>
+					<h1>Comments</h1>
 					<div class="comments">
+					</div>
+					<div class="comment-form">
+						<h2>Leave a Comment</h2>
+						<iframe class="comment-form-iframe" src="/comment-form.html?path={{ page.url }}"></iframe>
 					</div>
 				</div>
 				{% endif %}

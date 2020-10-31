@@ -51,7 +51,15 @@
 					</div>
 					<div class="comment-form">
 						<h2>Leave a Comment</h2>
-						<iframe class="comment-form-iframe" src="/comment-form.html?path={{ page.url }}"></iframe>
+						<form action="/" name="{{ page.path }}" data-netlify="true">
+      							<label for="comment">Your Comment</label>
+      							<textarea id="comment" required="" rows="10" style="display:block;width:100%;margin-bottom:16px"></textarea>
+      							<label for="name">Your Name</label>
+      							<input type="text" id="name" required="" style="display:block;width:100%;margin-bottom:16px">
+      							<label for="email">Your Email</label>
+      							<input type="email" id="email" required="" style="display:block;width:100%;margin-bottom:16px">
+      							<button id="submit" type="submit" disabled="">Post Comment</button>
+    						</form>
 					</div>
 				</div>
 				{% endif %}

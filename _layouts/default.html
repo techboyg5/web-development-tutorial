@@ -44,7 +44,7 @@
 					<a class="pagination-link" href="{{ page.nextpage }}" title="{{ page.nexttitle }}">Next</a>
 				</div>
 				<hr>
-				{% if page.comments == "true" %}
+				{% if page.comments %}
 				<div class="comments">
 					<div class="comment-form">
 						<iframe class="comment-form-iframe" src="/comment-form.html?path={{ page.url }}"></iframe>
